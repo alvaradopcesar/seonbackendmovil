@@ -1,0 +1,5 @@
+user: root
+pass: ???
+server: localhost
+port: 3306
+schema: demo

@@ -1,0 +1,16 @@
+FROM golang:1.9
+
+# MAINTAINER Cesar Alvarado <alvaradopcesar@gmail.com>
+# USER root
+
+RUN mkdir /go/src/imb
+
+WORKDIR /go/src/imb
+
+ADD . /go/src/imb
+
+RUN go get -d -v . 
+
+# ENTRYPOINT ["docker-entrypoint.sh"]
+
+#CMD ["./imb"]
